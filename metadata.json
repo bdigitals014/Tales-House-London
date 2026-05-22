@@ -1,0 +1,6 @@
+{
+  "name": "Tales House London",
+  "description": "Experiential retail and cultural space for African and diaspora brands on London's Oxford Street. Soho House meets curated creative retail.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
