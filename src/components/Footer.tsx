@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, Instagram, Mail, Share2, Sparkles, Check } from 'lucide-react';
+import { LogoMark } from './Logo';
 
 interface FooterProps {
   onOpenApply: () => void;
@@ -29,14 +30,9 @@ export default function Footer({ onOpenApply, onExploreManifesto }: FooterProps)
           {/* Column 1 - Corporate Logo brand details */}
           <div className="lg:col-span-4 flex flex-col justify-between">
             <div>
-              {/* Logo representing red and clay geometric crown */}
+              {/* Elegant brand logo mark */}
               <div className="flex items-center gap-2 mb-4">
-                <svg viewBox="0 0 100 100" className="w-8 h-8 text-red-600 block">
-                  <path d="M10 80 L30 30 L50 60 L70 30 L90 80 Z" fill="currentColor" />
-                  <circle cx="30" cy="22" r="6" fill="#D97706" />
-                  <circle cx="50" cy="50" r="6" fill="#D97706" />
-                  <circle cx="70" cy="22" r="6" fill="#D97706" />
-                </svg>
+                <LogoMark className="w-10 h-10 block" />
                 <div className="flex flex-col">
                   <span className="font-serif text-[15px] tracking-[0.22em] text-stone-900 font-bold uppercase leading-none">
                     TALES HOUSE

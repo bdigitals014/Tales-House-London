@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
+import { LogoMark } from './Logo';
 
 interface HeaderProps {
   onOpenRegister: () => void;
@@ -42,26 +43,8 @@ export default function Header({ onOpenRegister, onOpenApply }: HeaderProps) {
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <div className="relative w-8 h-8 flex items-center justify-center">
-              {/* Geometric Crown Logo representation in red and clay */}
-              <svg viewBox="0 0 100 100" className="w-full h-full text-red-600 transition-transform duration-500 hover:rotate-12">
-                <path 
-                  d="M10 80 L30 30 L50 60 L70 30 L90 80 Z" 
-                  fill="currentColor" 
-                  className="opacity-90"
-                />
-                <circle cx="30" cy="22" r="6" fill="#D97706" />
-                <circle cx="50" cy="50" r="6" fill="#D97706" />
-                <circle cx="70" cy="22" r="6" fill="#D97706" />
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif text-lg tracking-[0.25em] text-stone-100 font-semibold leading-none uppercase">
-                Tales House
-              </span>
-              <span className="font-mono text-[9px] tracking-[0.45em] text-amber-500 font-medium uppercase mt-0.5">
-                London
-              </span>
+            <div className="relative w-10 h-10 flex items-center justify-center">
+              <LogoMark className="w-full h-full hover:rotate-12 duration-500 transition-transform" />
             </div>
           </div>
 
